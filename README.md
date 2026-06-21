@@ -6,4 +6,4 @@ Os alertas foram feitos a partir de um novo arquivo component com o nome "AlertC
 ## Links do Projeto 
 * Link da API:[https:https://api-tburguer-1.onrender.com](https://api-tburguer-1.onrender.com/)
 * Link do Site HiperDog:https://hiper-dog-projeto-final-5qw7.vercel.app/
-* Link para o Repositório: 
+* Link para o Repositório: https://github.com/YukiSukiyama/HiperDog-Projeto-Final
