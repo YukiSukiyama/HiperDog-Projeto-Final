@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     async consultarMenu() {
-      const response = await fetch("http://localhost:3000/hotdogs");
+      const response = await fetch("https://api-tburguer-1.onrender.com/hotdogs");
       const dados = await response.json();
       this.listaMenuHotdogs = dados;
     },

@@ -75,26 +75,26 @@ export default {
   },
   methods: {
     async consultarPedidos() {
-      const response = await fetch("http://localhost:3000/pedidos");
+      const response = await fetch("https://api-tburguer-1.onrender.com/pedidos");
       const dados = await response.json();
       this.listaPedidosRealizados = dados;
     },
     async consultarStatusPedido() {
-      const response = await fetch("http://localhost:3000/status_pedido");
+      const response = await fetch("https://api-tburguer-1.onrender.com/status_pedidos");
       this.listaStatusPedido = await response.json();
     },
-   async deletarPedido(id) {
-  const response = await fetch(`http://localhost:3000/pedidos/${id}`, {
-    method: "DELETE",
-  });
-  
-  this.consultarPedidos(); 
-},
+    async deletarPedido(id) {
+      const response = await fetch(`https://api-tburguer-1.onrender.com/pedidos/${id}`, {
+        method: "DELETE",
+      });
+      
+      this.consultarPedidos(); 
+    },
     async atualizarStatusPedido(event, idPedido) {
       const idPedidoAtualizado = event.target.value;
       const atualizaoJson = JSON.stringify({ statusId: idPedidoAtualizado });
 
-      await fetch(`http://localhost:3000/pedidos/${idPedido}`, {
+      await fetch(`https://api-tburguer-1.onrender.com/pedidos/${idPedido}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: atualizaoJson,

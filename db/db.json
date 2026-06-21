@@ -43,43 +43,7 @@
       "descricao": "Pedido realizado"
     }
   ],
-  "pedidos": [
-    {
-      "nome": "Morilo",
-      "salsicha": {
-        "id": 2,
-        "descricao": "Salsicha Viena"
-      },
-      "bebidas": [
-        {
-          "id": 1,
-          "nome": "Coca Cola Lata 310 ml",
-          "valor": 6
-        }
-      ],
-      "complemento": [
-        {
-          "id": 4,
-          "nome": "Vinagrete",
-          "valor": 2
-        },
-        {
-          "id": 5,
-          "nome": "Bacon em Cubos",
-          "valor": 4
-        }
-      ],
-      "hotdog": {
-        "id": 2,
-        "nome": "Dogão Duplo Cheddar",
-        "foto": "/img/dog2.jpeg",
-        "descricao": "Pão macio, duas salsichas Viena, muito cheddar derretido e cebola caramelizada.",
-        "valor": 22
-      },
-      "statusId": 5,
-      "id": 4
-    }
-  ],
+  "pedidos": [],
   "opcionais": {
     "complemento": [
       {

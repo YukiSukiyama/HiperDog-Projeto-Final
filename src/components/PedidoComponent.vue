@@ -112,12 +112,12 @@ export default {
   },
   methods: {
     async getTipoSalsicha() {
-      const response = await fetch("http://localhost:3000/tipos_salsicha");
+      const response = await fetch("https://api-tburguer-1.onrender.com/tipos_salsicha");
       const dados = await response.json();
       this.listaTipoSalsicha = dados;
     },
     async getOpcionais() {
-      const response = await fetch("http://localhost:3000/opcionais");
+      const response = await fetch("https://api-tburguer-1.onrender.com/opcionais");
       const dados = await response.json();
       this.listaComplementos = dados.complemento;
       this.listaBebidas = dados.bebidas;
@@ -146,7 +146,7 @@ export default {
 
       const dadosJson = JSON.stringify(dadosPedido);
 
-      await fetch("http://localhost:3000/pedidos", {
+      await fetch("https://api-tburguer-1.onrender.com/pedidos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: dadosJson,
@@ -157,7 +157,7 @@ export default {
 
       setTimeout(() => {
         this.$router.push({ name: "pedidos" });
-        }, 2500);
+      }, 2500);
     },
   },
   mounted() {
@@ -168,7 +168,6 @@ export default {
 </script>
 
 <style scoped>
-
 #foto-content {
   margin-bottom: 16px;
   border-radius: 16px;
@@ -224,7 +223,6 @@ select {
   font-size: 14px;
 }
 
-
 .checkbox-container {
   display: flex;
   align-items: center; 
@@ -255,7 +253,4 @@ select {
   width: 100%;
   transition: 0.5s;
 }
-
-
-
 </style>
