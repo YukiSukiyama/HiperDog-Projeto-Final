@@ -80,7 +80,7 @@ export default {
       this.listaPedidosRealizados = dados;
     },
     async consultarStatusPedido() {
-      const response = await fetch("https://api-tburguer-1.onrender.com/status_pedidos");
+      const response = await fetch("https://api-tburguer-1.onrender.com/status_pedido");
       this.listaStatusPedido = await response.json();
     },
     async deletarPedido(id) {
